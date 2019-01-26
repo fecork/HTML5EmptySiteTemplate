@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-    </head>
-    <body>
-        
-    </body>
+<html>
+<head>
+  <title>Automated call form</title>
+</head>
+<body>
+  <h1>IA Call Innovati</h1>
+  <p>Escribe el numero y Click! <b>Haz la llamada.  </b>.</p>
+  <form action="makecall.php" method="post">
+    <table>
+      <tr>
+        <td>De:</td>
+        <td><input name="callTo" size="50" type="text" value=""></td>
+      </tr>
+      <tr>
+        <td>Llamar a:</td>
+        <td><input name="callFrom" size="50" type="text" value=""></td>
+      </tr>
+      <tr>
+        <td>Call message:</td>
+        <td><input name="callText" size="100" type="text" value="Hola esta es una llamada de prueba. Adios"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Llamar"></td>
+      </tr>
+    </table>
+  </form><br>
+</body>
 </html>
